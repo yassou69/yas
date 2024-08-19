@@ -1,0 +1,66 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ash</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .images-container img {
+            margin: 10px;
+            width: 200px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .images-container img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Happy Birthday Ash</h1>
+
+    <img src="bouquet.jpg" id="mainImage" style="width:300px; cursor: pointer;">
+
+    <h2 id="clickMessage">Click on the flowers</h2>
+
+    <div id="additionalImages" class="images-container hidden">
+        <a href="https://moviesjoy.is/tv/dickinson-46261" target="_blank">
+            <img src="dickinson show poster.jpeg" alt="Emily Dickinson">
+        </a>
+
+        <a href="https://open.spotify.com/intl-fr/track/7BRD7x5pt8Lqa1eGYC4dzj?si=fff3d347438940ac" target="_blank">
+            <img src="chihiro.jpg" alt="Chanson préférée">
+        </a>
+
+        <a href="https://www.bilibili.tv/en/video/2040550665" target="_blank">
+            <img src="imaginemovie.jpg" alt="Imagine Me And You">
+        </a>
+		<a href="https://open.spotify.com/playlist/1vGRlbh8H12e500Kyffc01?si=41ebb86df45f4ee9" target="_blank">
+            <img src="You’re my happy place_.jpeg" alt="playlist">
+        
+    </div>
+
+    <script>
+        // Code JavaScript pour afficher les images cachées au clic et masquer le sous-titre
+        document.getElementById('mainImage').onclick = function() {
+            // Afficher ou masquer les images supplémentaires
+            document.getElementById('additionalImages').classList.toggle('hidden');
+            
+            // Masquer le texte "Click on the flowers"
+            document.getElementById('clickMessage').classList.add('hidden');
+        }
+    </script>
+
+</body>
+</html>
