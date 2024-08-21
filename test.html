@@ -1,0 +1,48 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey novarous</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .images-container img {
+            margin: 10px;
+            width: 200px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .images-container img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HEYYY</h1>
+
+        <h2 id="clickMessage">Click on the flowers</h2>
+    <!-- Image de la fleur -->
+    <img src="bouquet.jpg" alt="Fleur" id="mainImage" style="width:300px; cursor: pointer;">
+
+    <!-- Conteneur pour les autres images -->
+    <div id="additionalImages" class="images-container hidden">
+        <!-- Image menant à la série Emily Dickinson -->
+        <a href="https://youtu.be/KNtJGQkC-WI?si=4refYuGGMMLpxpdC" target="_blank">
+            <img src="winter.png" alt="mj">
+        </a>
+    </div>
+
+    <script src="tests.js"></script>
+</body>
+</html>
+
